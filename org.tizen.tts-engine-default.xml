@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.tizen.tts-engine-default" version="1.0.0">
+    <profile name="mobile"/>
+    <service-application appid="org.tizen.tts-engine-default" exec="org.tizen.tts-engine-default" multiple="false" nodisplay="true" taskmanage="false" type="capp">
+        <label>tts-engine-default</label>
+        <icon>ttssmt.png</icon>
+        <metadata key="http://tizen.org/metadata/tts-engine/uuid" value="27F277E9-BBC4-4dca-B553-D9884A3CDAA0"/>
+        <metadata key="http://tizen.org/metadata/tts-engine/language" value="en_US:female,ko_KR:female,de_DE:female,fr_FR:female,it_IT:female,es_ES:female"/>
+    </service-application>
+    <service-application appid="org.tizen.tts-engine-default-noti" exec="org.tizen.tts-engine-default" type="capp"/>
+    <service-application appid="org.tizen.tts-engine-default-sr" exec="org.tizen.tts-engine-default" type="capp"/>
+  <ui-application appid="org.tizen.tts-engine-default-setting" exec="org.tizen.tts-engine-default-setting" nodisplay="true" multiple="false" type="capp" taskmanage="false">
+    <label>TTSSMT engine setting</label>
+  </ui-application>
+  <privileges>
+    <privilege>http://tizen.org/privilege/internet</privilege>
+    <privilege>http://tizen.org/privilege/download</privilege>
+  </privileges>
+</manifest>
